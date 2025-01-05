@@ -45,14 +45,19 @@ background-color: #1a69c4;
     color: #1668c6;
     border-radius: 2px;
     font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     
     
 
 }
 .input-age,.input-gender,.input-height,.input-weight{
     height: 30px;
+    width: 20;
     background-color: rgb(238, 241, 243);
     border-radius: 2px;
+   
     
 }
 
@@ -66,6 +71,32 @@ background-color: #1a69c4;
     display: flex;
     height: 400px;
     border: solid rgb(1, 1, 1) 2px;
-    background-color: rgb(148, 244, 154);
-    color: rgb(21, 21, 219);
+    background-color: rgb(77, 213, 223);
+    color: rgb(67, 80, 176);
+}
+
+#caluu{
+    width: 150px;
+    background-color: rgb(53, 53, 203);
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    
+
+}
+#calculate{
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#caluu:hover{
+opacity: 0.4;
+}
+#caluu:active{
+    background-color:white ;
+    color: blue;
 }

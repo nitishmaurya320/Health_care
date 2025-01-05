@@ -1,7 +1,7 @@
 
 let age=document.querySelector('.input-age');
 var height=document.querySelector('.input-height');
-let weight= document.getElementById("input_weight");
+let weight= document.querySelector('.input-weight');
 
 
 
