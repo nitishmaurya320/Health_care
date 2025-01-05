@@ -9,8 +9,7 @@ height: 100px;
 justify-content: center;
 align-items: center;
 display: flex;
-background-color: #2E5077;
-
+background-color: #1a69c4;
 }
 .menubar{
     margin-left: 30%;
@@ -20,7 +19,7 @@ background-color: #2E5077;
     
     border: solid 2px black;
     justify-content: space-between;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 17px;
 
 
@@ -29,33 +28,44 @@ background-color: #2E5077;
     height: 400px;
     width: 400px;
     border: solid 3px black;
+    background-color: rgb(167, 254, 255);
 }
 .headingbmi{
     width: 400px;
     height: 80px;
     border: solid black 3px;
     font-size: 50px;
+    color: rgb(33, 199, 205);
 }
 .height,.weight,.age,.gender,.calculate{
     width: 400px;
     height: 62px;
     border: solid 1px black;
     display: flex;
+    color: #1668c6;
+    border-radius: 2px;
+    font-size: x-large;
+    
+    
 
 }
 .input-age,.input-gender,.input-height,.input-weight{
     height: 30px;
+    background-color: rgb(238, 241, 243);
+    border-radius: 2px;
+    
 }
 
 .result{
     width: 500px;
     height: 400px;
-    border: solid black 2px;
+    border: solid rgb(8, 7, 7) 2px;
 
 }
 .container{
     display: flex;
-    width: 900px;
     height: 400px;
-    border: solid red 2px;
+    border: solid rgb(1, 1, 1) 2px;
+    background-color: rgb(148, 244, 154);
+    color: rgb(21, 21, 219);
 }
