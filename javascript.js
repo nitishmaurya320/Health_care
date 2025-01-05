@@ -18,7 +18,7 @@ document.getElementById('caluu').addEventListener("click", function(){
         document.querySelector('.remark').innerHTML="Normal";
     }
     else if(ans>25.0&&ans<39.9){
-        document.querySelector('.remark').innerHTML="Normal";
+        document.querySelector('.remark').innerHTML="Overweight";
     }   
     else
     document.querySelector('.remark').innerHTML="Obese";
