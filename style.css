@@ -1,10 +1,11 @@
 *{
-    margin: 0;
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    width: fit-content;
+    border: solid 2px black;
 }
 .header{
 
@@ -34,19 +35,25 @@ background-color: #1a69c4;
 }
 .bmi{
     height: 400px;
-    width: 400px;
+    width: 33%;
     border: solid 3px black;
-    background-color: rgb(167, 254, 255);
+    background-color: rgb(236, 228, 162);
 }
-.headingbmi{
-    width: 400px;
+.b1{
+    width: 100%;
     height: 80px;
     border: solid black 3px;
-    font-size: 50px;
+    font-size: 100%;
     color: rgb(33, 199, 205);
+    text-align: center;
+
+}
+.b1 h2{
+    color: darkblue;
+    font-size: 40px;
 }
 .height,.weight,.age,.gender,.calculate{
-    width: 400px;
+    width: 90%;
     height: 62px;
     border: solid 1px black;
     display: flex;
@@ -62,9 +69,10 @@ background-color: #1a69c4;
 }
 .input-age,.input-gender,.input-height,.input-weight{
     height: 30px;
-    width: 20;
+    width: 80%;
     background-color: rgb(238, 241, 243);
     border-radius: 2px;
+    max-width: 200px;
    
     
 }
@@ -81,7 +89,7 @@ background-color: #1a69c4;
     border: solid rgb(236, 20, 20) 2px;
     background-color: rgb(77, 213, 223);
     color: rgb(67, 80, 176);
-    width: 100%;
+    width: 100vw;
 }
 
 #caluu{
@@ -113,10 +121,17 @@ opacity: 0.4;
 .r1{
     display: flex;
 }
+.r1-title{
+    color: red;
+    font-size: 50px;
+    margin-top: 20px;
+}
 .r1 p{
     color: red;
     font-size: 50px;
     margin-left: 20px;
+    margin-top: 20px;
+    
 }
 .r2{
     text-align: center;
@@ -165,4 +180,38 @@ opacity: 0.4;
     width: 25%;
     height: 80%;
     border: solid 1px black;
+}
+.r4 p {
+    color: black;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin-left: 40px;
+}
+.r3 .tip-heading{
+    color: black;
+    font-size: 35px;
+    margin-left: 40px;
+}
+.r2 .remark{
+    font-size: 200%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 708px){
+
+    .container{
+        flex-direction: column;
+        
+        width: fit-content;
+        height: fit-content;
+    }
+    .bmi{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .bmiheading{
+        width: 100%;
+    }
 }
