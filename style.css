@@ -1,15 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
 }
 .header{
 
-width: 100vw;
+width: 100%;
 height: 100px;
 justify-content: center;
 align-items: center;
 display: flex;
 background-color: #1a69c4;
+}
+.logo{
+    width: 100px;
+    height: 100px;
 }
 .menubar{
     margin-left: 30%;
@@ -70,9 +78,10 @@ background-color: #1a69c4;
 .container{
     display: flex;
     height: 400px;
-    border: solid rgb(1, 1, 1) 2px;
+    border: solid rgb(236, 20, 20) 2px;
     background-color: rgb(77, 213, 223);
     color: rgb(67, 80, 176);
+    width: 100%;
 }
 
 #caluu{
@@ -99,4 +108,61 @@ opacity: 0.4;
 #caluu:active{
     background-color:white ;
     color: blue;
+}
+
+.r1{
+    display: flex;
+}
+.r1 p{
+    color: red;
+    font-size: 50px;
+    margin-left: 20px;
+}
+.r2{
+    text-align: center;
+}
+
+.radio-m,.radio-f{
+    height: 15px;
+    width: 15px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+.news h4{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.exercise{
+    width: 100%;
+    height: 400px;
+    border: solid 2px black;
+    justify-items: center;
+
+}
+.exercise-heading h1{
+    text-align: center;
+}
+
+.exercise-content{
+
+    width: 90%;
+    height: 80%;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.vid-1,.vid-2,.vid-3{
+    width: 25%;
+    height: 80%;
+    border: solid 1px black;
 }

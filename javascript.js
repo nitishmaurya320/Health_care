@@ -12,7 +12,7 @@ document.getElementById('caluu').addEventListener("click", function(){
     document.querySelector('.ans').innerHTML=ans.toFixed(2);
 
     if(ans<18.4){
-        document.querySelector('.remark').innerHTML="Under weight";
+        document.querySelector('.remark').innerHTML="Underweight";
     }
     else if(ans>18.4&&ans<24.9){
         document.querySelector('.remark').innerHTML="Normal";

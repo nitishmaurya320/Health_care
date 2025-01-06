@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="header">
+        <img class="logo" src="healthcare.png" type="png">
         <div class="menubar">
             <p>Home</p>
             <p>About us</p>
@@ -18,59 +19,83 @@
         </div>
     </div>
     <div class="container">
-    <div class="bmi">
-        <div class="headingbmi"> 
-            BMI Calculator
-        </div>
-        <div class="age">
-            <p>Age</p>
-            <input name="age" class="input-age" type="text">
-        </div>
-        <div class="gender">
-            <p>Gender</p>
-            <p>Male</p>
+        <div class="bmi">
+            <div class="headingbmi"> 
+                BMI Calculator
+            </div>
+            <div class="age">
+                <p>Age</p>
+                <input name="age" class="input-age" type="text">
+            </div>
+            <div class="gender">
+                <p>Gender</p>
+                <p>Male</p>
+                <input class="radio-m"type="radio" name="gender">
+                
+                <p>Female</p>
+                <input class="radio-f" type="radio" name="gender">
+                
+            </div>
+            <div class="height"> 
+            <P>Height</P>
+            <input name="height" class="input-height" type="text" placeholder="in cm">
+            </div>
+            <div class="weight">
+                <P>Weight</P>
+            <input name="weight" class="input-weight" type="text" placeholder="in Kg">
             
-            <p>Female</p>
+                
+
+            
+            </div>
+            <div id="calculate"><button id="caluu">Calculate</button></div>
             
         </div>
-        <div class="height"> 
-        <P>Height</P>
-        <input name="height" class="input-height" type="text">
-        </div>
-        <div class="weight">
-            <P>Weight</P>
-        <input name="weight" class="input-weight" type="text">
         
+        <div class="result"> 
+                <div class="r1">
+                    <h1 style=
+                    "color: red;
+                    font-size: 50px;
+                    
+                    ">Your BMI is:-<h1>
+                        <p class="ans">0</p>
+                </div>
+                <div class="r2">
+                    <p class="remark"></p>
+                </div>
+        </div>
             
+            <style>
+                .remark{
+                    font-family: Arial ;
+                    font-size: 40px;
+                    color: rgb(49, 37, 37);
+                }
+            </style>
+            
+            
+        <div class="news">
+            <h4>News and Updates</h4>
 
-        
+            <a href="google.com">What is hmpv virus</a>
+            <a href="google.com">Why loneliness made to ill health</a>
+            <a href="google.com">10 yoga asan to Increase oxygen circulation in your body</a>
+            <a href="google.com">What is hmpv virus</a>
+            <a href="google.com">What is hmpv virus</a> 
         </div>
-        <div id="calculate"><button id="caluu">Calculate</button></div>
         
-    </div>
-
-    <div class="result"> <h1>Your BMI is<p class="ans">0</p></h1>
-
-    <div class="result"> <h1 style="
-    text-align: center;
-    ">Your BMI is<p class="ans" style=
-        "color: red;
-        font-size: 50px;
-        text-align: center;
-        ">0</p></h1>
-        <style>
-            .remark{
-                font-family: Arial ;
-                font-size: 40px;
-                color: rgb(49, 37, 37);
-            }
-        </style>
-
-        <p class="remark"></p>
-    </div>
-    
 </div>
-<p>hello</p>
+<div class="exercise">
+    <div class="exercise-heading">
+        <h1>Breathing Exercises</h1>
+    </div>
+    <div class="exercise-content">
+        <div class="vid-1"></div>
+        <div class="vid-2"></div>
+        <div class="vid-3"> </div>
+    </div>
+</div>
 
     
 </body>
