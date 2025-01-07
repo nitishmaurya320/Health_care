@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    width: fit-content;
-    border: solid 2px black;
+    width: 100%;
+    
 }
 .header{
 
@@ -20,76 +20,112 @@ background-color: #1a69c4;
     width: 100px;
     height: 100px;
 }
+.header h3{
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+    margin-left: 5%;
+}
 .menubar{
-    margin-left: 30%;
+    margin-left: 10%;
     display: flex;
     left: 500px;
     width: 60vw;
     
-    border: solid 2px black;
+    
     justify-content: space-between;
-    color: rgb(255, 255, 255);
+
     font-size: 17px;
+    
 
 
 }
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    display: none;
+    margin-left: 60%;
+
+
+}
+
 .bmi{
     height: 400px;
     width: 33%;
-    border: solid 3px black;
+    
     background-color: rgb(236, 228, 162);
+    justify-items: center ;
 }
 .b1{
     width: 100%;
-    height: 80px;
-    border: solid black 3px;
-    font-size: 100%;
-    color: rgb(33, 199, 205);
+    height: 70px;
+    
+    
+    
+    
     text-align: center;
 
 }
 .b1 h2{
     color: darkblue;
     font-size: 40px;
+    margin-top: 2%;
 }
 .height,.weight,.age,.gender,.calculate{
     width: 90%;
     height: 62px;
-    border: solid 1px black;
+  
     display: flex;
-    color: #1668c6;
+    color: #000000;
     border-radius: 2px;
     font-size: x-large;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    border-top: solid grey 2px;
+
     
     
 
 }
 .input-age,.input-gender,.input-height,.input-weight{
-    height: 30px;
+    height: 40px;
     width: 80%;
     background-color: rgb(238, 241, 243);
-    border-radius: 2px;
+    border: solid 2px grey;
     max-width: 200px;
+    border-radius: 5px;
+
    
     
 }
 
 .result{
-    width: 500px;
+    width: 33%;
     height: 400px;
-    border: solid rgb(8, 7, 7) 2px;
+    border-left: black solid 2px;
+    
+    background-color:#ffb5ee
 
 }
 .container{
     display: flex;
     height: 400px;
-    border: solid rgb(236, 20, 20) 2px;
-    background-color: rgb(77, 213, 223);
+    
+    background-color: rgb(255, 255, 255);
     color: rgb(67, 80, 176);
-    width: 100vw;
+    width: 100%;
 }
 
 #caluu{
@@ -101,6 +137,7 @@ background-color: #1a69c4;
     margin-top: 5px;
     cursor: pointer;
     font-size: 25px;
+    border: none;
     
 
 }
@@ -120,21 +157,24 @@ opacity: 0.4;
 
 .r1{
     display: flex;
+    
 }
 .r1-title{
     color: red;
-    font-size: 50px;
+   font-size: 40px;
     margin-top: 20px;
+    margin-left: 5%;
 }
 .r1 p{
     color: red;
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 20px;
     margin-top: 20px;
     
 }
 .r2{
     text-align: center;
+    
 }
 
 .radio-m,.radio-f{
@@ -144,16 +184,29 @@ opacity: 0.4;
 .news{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 33%;
     height: 400px;
     border: 1px solid black;
-    justify-content: space-evenly;
+    
+}
+.n1{
+    height: 50px;
+    width: 100%;
+    align-content: center;
+}
+.n2{
+    height: 350px;
+    width: 90%;
+    justify-content:space-around ;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
 }
 .news h4{
     text-align: center;
     color: black;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .exercise{
     width: 100%;
@@ -193,25 +246,75 @@ opacity: 0.4;
     margin-left: 40px;
 }
 .r2 .remark{
-    font-size: 200%;
-    cursor: pointer;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 708px){
+    body{
+        width: 100%;
+    
+        
+        
+    }
 
+    .header h3{
+        font-size: 20px;
+    }
+    .menubar a{
+        font-size: 15px;
+    }
     .container{
         flex-direction: column;
         
-        width: fit-content;
-        height: fit-content;
+        width: 100%;
+        height: 1200px;
+        
     }
     .bmi{
         width: 100%;
     }
     .header{
         width: 100%;
+        
     }
     .bmiheading{
         width: 100%;
     }
-}
+    .menubar{
+        width: 100%;
+        
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+    .about-section{
+        width: 100%;
+    }
+    .bmi,.result,.news{
+        width: 100%;
+    }
+    .n2{
+        width: 350px;
+    }
+    
+    .menu{
+        display: block;
+    }
+    nav ul{
+        top: 70px;
+        position: absolute;
+        overflow: hidden;
+
+    }
+    nav ul{
+        top: 100px;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        background-color: #1a69c4;
+        left: 0;
+        right: 0;
+        transition: all 0.3s;
+    }
+}   

@@ -1,3 +1,16 @@
+let menulist=document.querySelector('.menulist');
+menulist.style.maxHeight="0px";
+
+function togglemenu(){
+    if(menulist.style.maxHeight=="0px"){
+        menulist.style.maxHeight="380px";
+    }
+    else{
+        menulist.style.maxHeight="0px";
+    }
+
+}
+
 
 let age=document.querySelector('.input-age');
 var height=document.querySelector('.input-height');
@@ -11,13 +24,13 @@ document.getElementById('caluu').addEventListener("click", function(){
     
     
     
-    document.querySelector('.tip-heading').innerHTML="Tips:-";
+    
   
     let ans=weight.value/(height.value/100*height.value/100);
     document.querySelector('.ans').innerHTML=ans.toFixed(2);
 
     if(age.value>=2&&age.value<=120){
-        
+        document.querySelector('.tip-heading').innerHTML="Tips:-";
     if(ans<18.4){
         document.querySelector('.remark').innerHTML="Underweight";
         document.querySelector('.tips').innerHTML="Eat more calories <br> Add healthy fats <br> Add protein <br> Drink more calories <br> Exercise";   
