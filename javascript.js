@@ -31,20 +31,24 @@ document.getElementById('caluu').addEventListener("click", function(){
 
     if(age.value>=2&&age.value<=120){
         document.querySelector('.tip-heading').innerHTML="Tips:-";
-    if(ans<18.4){
+    if(ans<18.5&&ans>0){
         document.querySelector('.remark').innerHTML="Underweight";
-        document.querySelector('.tips').innerHTML="Eat more calories <br> Add healthy fats <br> Add protein <br> Drink more calories <br> Exercise";   
-        document.querySelector('.new').innerHTML="Click here for more details"
-        document.querySelector('.new').addEventListener("click", function(){
+        document.querySelector('.tips').innerHTML="<ul> <li>Eat more calories</li><li>Add healthy fats</li><li> Add protein </li><li>Drink more calories </li><li>Exercise</li></ul>";   
+        document.querySelector('.more_detail').innerHTML="Click here for more details";
+        document.querySelector('.more_detail').addEventListener("click", function(){
             window.open("underweight-detal.html");
         })
     }
-    else if(ans>18.4&&ans<24.9){
+    else if(ans>=18.5&&ans<=24.9){
         document.querySelector('.remark').innerHTML="Normal";
     }
-    else if(ans>25.0&&ans<39.9){
+    else if(ans>=25.0&&ans<=39.9){
         document.querySelector('.remark').innerHTML="Overweight";
-    }   
+        document.querySelector('.tips').innerHTML="<ul> <li>Eat varied, colorful, nutritionally dense foods</li><li>Keep a food and weight diary</li><li>Engage in regular physical activity and exercise</li>   <li>Eliminate liquid calories</li></ul>";
+      document.querySelector('.more_detail').innerHTML="Click here for more details";
+        document.querySelector('.more_detail').addEventListener("click", function(){
+        window.open("overweight.html");
+    })}
     else{
     document.querySelector('.remark').innerHTML="Obese";}
     }
