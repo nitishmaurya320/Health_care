@@ -95,14 +95,8 @@ document.getElementById('caluu').addEventListener("click", function(){
 
 let vid1=document.querySelector('.vp-1');
 let vid2=document.querySelector('.vp-2');
-function playvideo1(){
-    
-    
+function playvideo(){
+
     location.href=("video-player.html");
-  
-    vid1.play(); 
-    
-    
-    
 }
   
