@@ -56,13 +56,14 @@ document.getElementById('caluu').addEventListener("click", function(){
     
     
     
-    
+    let bmiImage=document.querySelector('.bmi1');
   
     let ans=weight.value/(height.value/100*height.value/100);
     document.querySelector('.ans').innerHTML=ans.toFixed(2);
 
     if(age.value>=2&&age.value<=120){
         document.querySelector('.tip-heading').innerHTML="Tips:-";
+        bmiImage.style.display="none";
     if(ans<18.5&&ans>0){
         document.querySelector('.remark').innerHTML="Underweight";
         document.querySelector('.tips').innerHTML="<ul> <li>Eat more calories</li><li>Add healthy fats</li><li> Add protein </li><li>Drink more calories </li><li>Exercise</li></ul>";   
@@ -82,8 +83,15 @@ document.getElementById('caluu').addEventListener("click", function(){
         window.open("overweight.html");
     })}
     else{
-    document.querySelector('.remark').innerHTML="Obese";}
-    }
+    document.querySelector('.remark').innerHTML="Obese";
+    document.querySelector('.tips').innerHTML="<ul> <li>Exercise</li><li>Limit processed foods, sugary drinks, and unhealthy fats   </li><li> Read food labels</li>"; 
+    document.querySelector('.more_detail').innerHTML="Click here for more details";
+    document.querySelector('.more_detail').addEventListener("click", function(){
+        window.open("overweight.html");
+
+});
+        
+    }}
 
     else{
             document.querySelector('.remark').innerHTML="Please enter age between 2-120";
@@ -93,10 +101,125 @@ document.getElementById('caluu').addEventListener("click", function(){
 
 });
 
-let vid1=document.querySelector('.vp-1');
-let vid2=document.querySelector('.vp-2');
-function playvideo(){
 
-    location.href=("video-player.html");
+// function playvideo(a){
+//     let vid1=document.querySelector(`.vp-${a}`);
+    
+//     vid1.style.display="block";
+//     vid1.style.height="auto";
+//     vid1.style.width="70%";
+//     vid1.style.position="fixed";
+//     vid1.style.top="50%";
+//     vid1.style.left="50%";
+//     vid1.style.transform="translate(-50%,-50%)";
+//     vid1.style.zIndex="1";
+    
+// }
+let close1=document.querySelector('.close');
+let vid1=document.querySelector(`.vp-1`);
+
+function playvideo(file){
+    let vid1=document.querySelector(`.vp-1`);
+    
+    vid1.src=file
+    vid1.autoplay=true;
+    vid1.style.display="block";
+    vid1.style.height="auto";
+    vid1.style.width="70%";
+    vid1.style.position="fixed";
+    vid1.style.top="50%";
+    vid1.style.left="50%";
+    vid1.style.transform="translate(-50%,-50%)";
+    vid1.style.zIndex="1";
+
+    close1.style.display="block";
+    close1.style.height="auto";
+    close1.style.width="5%";
+    close1.style.position="fixed";
+    close1.style.top="15%";
+    close1.style.left="82%";
+    close1.style.transform="translate(-50%,-50%)";
+    close1.style.zIndex="1";
+    var x = window.matchMedia("(max-width: 708px)")
+
+    if (x.matches) { // If media query matches
+        close1.style.top="39%";
+        vid1.style.width="100%";
+        close1.style.left="94%";
+        close1.style.width="10%";
+
+    } else {
+      
+    }
+    
 }
+function cut(){
+    vid1.style.display="none"
+    close1.style.display="none";
+    vid1.pause();
+
+}
+
+//cal- calc
+let fooditem=document.querySelector('.banana-btn');
+
+let sum= 0;
+let food=document.querySelector('.food-list');
+function add(fruit1,cal){
+    sum=sum+cal;
+   
+    let node =document.createElement("div");
+    let node1 =document.createElement("p");
+    let node2 =document.createElement("p");
+
+    
+
+   
+
+    let textnode = document.createTextNode(fruit1);
+    let calorie = document.createTextNode(cal);
+    
+    
+
+
+    node1.appendChild(textnode);
+    
+
+    node2.appendChild(calorie);
+    node.appendChild(node1);
+      
+    node.appendChild(node2);
+    
+    
+    
+    // let buton=document.querySelector(`.${btn}`);
+    // buton.style.display="none"
+    
+    
+   food.appendChild(node);
+   node.style.display="flex";
+node.style.height="30px";
+// node1.style.paddingLeft="20px"
+// node1.style.paddingRight="200px";
+// node2.style.marginLeft="20px"
+node.style.justifyContent="space-around"
+
+document.querySelector('.totalcalory').innerHTML=sum;
+}   
+function AC(){
+const clear = document.querySelector('.clear');
+while (food.firstChild) {
+    food.removeChild(food.lastChild);
+  }
+  sum=0;
+  document.querySelector('.totalcalory').innerHTML=sum;
+}
+
+
   
+  
+    
+    
+    
+    
+

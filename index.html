@@ -16,8 +16,7 @@
             <ul class="menulist">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About us</a></li>
-                <li><a>Services</a></li>
-                <li> <a>Contact us</a></li>
+                
            
             </ul>
             <img onclick="togglemenu()" class="menu" src="menu.png" type="png">
@@ -65,6 +64,7 @@
                     <h1 class="r1-title" >Your BMI is:-<h1>
                         <p class="ans">0</p>
                 </div>
+            <img class="bmi1" src="bmi.png">
                 <div class="r2">
                     <p class="remark"></p>
                 </div>
@@ -94,35 +94,167 @@
                 <h4>News and Updates</h4>
             </div>
             <div class="n2">
-                <a href="https://my.clevelandclinic.org/health/diseases/22443-human-metapneumovirus-hmpv">What is hmpv virus</a>
-                <a href="google.com">Why loneliness made to ill health</a>
-                <a href="google.com">10 yoga asan to Increase oxygen circulation in your body</a>
-                <a href="google.com">What is hmpv virus</a>
-                <a href="google.com">What is hmpv virus</a> 
+                <a href="https://my.clevelandclinic.org/health/diseases/22443-human-metapneumovirus-hmpv">What is HMPV virus</a>
+                <a href="https://www.healthline.com/health-news/best-foods-winter-immunity">Best Immune-Boosting Foods to Eat During Winter to Help You Stay Healthy</a>
+                <a href="https://www.healthline.com/health-news/666-walking-trend-weight-loss">How the 6-6-6 Walking Workout Can Help You Lose Weight and Get Fit</a>
+                <a href="https://www.healthline.com/health-news/sugary-drinks-diabetes-heart-disease">Sugary Drinks Linked to Diabetes, Heart Disease. Here's What to Drink Instead</a>
+                <a href="https://www.healthline.com/health-news/protein-mistakes-weight-loss">Eating More Protein to Lose Weight? Avoid These 6 Common Mistakes</a> 
             </div>
         </div>
         
 </div>
-<div class="cal-calc">
-
+<div class="calorie-head">
+    <h1>Calorie Calculator</h1>
 </div>
+<div class="cal-count">
+    <div class="food-items">
+     <div class="heading-food">
+         <h3>Food Items</h3>
+     </div>
+     
+             <div class="f1">
+                 <div class="fc">
+                     <img class="fruit" src="fruits/apple.jpg">
+                     <div class="add"><p>Apple</p><button onclick="add('Apple',95)">Add</button>   </div>
+                     
+                         
+                        
+                     
+                     
+                 </div>
+                 <div class="fc">
+                     <img class="fruit" src="fruits/banana.jpg">
+                     <div class="add"><p>Banana</p><button class="button" onclick="add('Banana',105)">Add</button></div>
+                     
+                 </div>
+                 <div class="fc"><img class="fruit" src="fruits/orange.jpg">
+                     <div class="add"><p>Orange</p><button onclick="add('Orange',73)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/lemon.jpg    ">
+                     <div class="add"><p>Lemon</p><button onclick="add('Lemon',17)">Add</button></div></div>
+             </div>
+             <div class="f2">
+                 <div class="fc"><img class="fruit" src="fruits/guava.jpg">
+                     <div class="add"><p>Guava</p><button onclick="add('Guava',37)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/avacado.webp">
+                     <div class="add"><p>Avacado</p><button onclick="add('Avacado',240)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/amla.jpg">
+                     <div class="add"><p>Amla</p><button onclick="add('Amla',36)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/carrot.jpg">
+                     <div class="add"><p>Carrot</p><button onclick="add('Carrot',25)">Add</button></div></div> 
+              </div>
+             <div class="f3">
+                 <div class="fc"><img class="fruit" src="fruits/dragon-fruit.jpg">
+                     <div class="add"><p>Dragon-fruit</p><button onclick="add('Dragon-fruit',57)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/grapes.jpg">
+                     <div class="add"><p>Grapes(100 gm)</p><button onclick="add('Grapes(100gm)',67)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/Pomegranate.jpg">
+                     <div class="add"><p>Pomegranate</p><button onclick="add('Pomegranate',17)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/pineapple.jpg">
+                     <div class="add"><p>Pineapple</p><button onclick="add('Pineapple',17)">Add</button></div></div>
+             </div>
+             <div class="f4">
+                 <div class="fc"><img class="fruit" src="fruits/coconut.jpg">
+                     <div class="add"><p>Coconut</p><button onclick="add('Coconut',159)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/chapati.jpg">
+                     <div class="add"><p>Chapati</p><button onclick="add('Chapati',75)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/rice.jpg">
+                     <div class="add"><p>Rice(100 gm)</p><button onclick="add('Rice',130)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/fish.jpg">
+                     <div class="add"><p>Fish</p><button onclick="add('Fish',200)">Add</button></div></div>
+             </div> 
+             <div class="f5">
+                 <div class="fc"><img class="fruit" src="fruits/egg.jpg">
+                     <div class="add"><p>Egg</p><button onclick="add('Egg',66)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/spinach.jpg">
+                     <div class="add"><p>Spinach(100 gm)</p><button onclick="add('Spinach',23)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/brocoli.jpg">
+                     <div class="add"><p>Brocoli(100 gm)</p><button onclick="add('Brocoli',34)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/gram.jpg">
+                     <div class="add"><p>Gram (100gm)</p><button onclick="add('Gram',130)">Add</button></div></div>
+             </div>
+
+             <div class="f6">
+                 <div class="fc"><img class="fruit" src="fruits/green-gram.jpg">
+                     <div class="add"><p>Green-gram(100 gm)</p><button onclick="add('Green gram',30)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/soya.jpg">
+                     <div class="add"><p>Soya(100 gm)</p><button onclick="add('Soya',471)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/milk.jpg">
+                     <div class="add"><p>Milk(100 gm)</p><button onclick="add('Milk',42)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/curd.jpg">
+                     <div class="add"><p>Curd(100 gm)</p><button onclick="add('Curd',98)">Add</button></div></div>
+             </div>
+             <div class="f7">
+                 <div class="fc"><img class="fruit" src="fruits/bread.jpg">
+                     <div class="add"><p>Bread/slice</p><button onclick="add('Bread',60)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/almond.jpg">
+                     <div class="add"><p>Almond(100 gm)</p><button onclick="add('Almond',576)">Add</button></div></div>
+                 <div class="fc"><img class="fruit" src="fruits/chicken.jpg">
+                     <div class="add"><p>Chicken</p><button onclick="add('Chicken',239)">Add</button></div></div>
+                 
+             </div>
+     
+     
+     
+         </div>  
+    <div class="cal-2">
+     <div class="calories">
+         <div class="c1"><p><b>Food</b></p><p><b>Calories</b></p></div>
+         <div class="food-list">
+             
+
+         </div>
+         
+
+     </div> 
+     <div class="calc-calories">
+         <h2>Total Calories</h2>
+         <p style="color: red;
+         font-size: 50px
+         ;"class="totalcalory">0</p>
+         <button onclick="AC()" class="clear">Clear</button>
+     </div>
+     </div>
+ </div>
 <div class="exercise">
     <div class="exercise-heading">
         <h1>Breathing Exercises</h1>
     </div>
     <div class="exercise-content">
-        <div class="vid-1">
-            <img class="v1" src="v1-img.png">
-            <img  onclick="playvideo()" class="play-btn" src="Play.png">
+        <div class="video-container">
+            <div class="video">
+                <img class="v1" src="v1-img.png">
+                <img onclick="playvideo('videos/v1.mp4')" class="play-btn" src="Play.png">
+                
+            </div>
+            <div class="vd-title"><p>2 min Breathing excercise</p></div>
         </div>
-        <div class="vid-2">
-            <img class="v2" src="v2-img.png">
-            <img onclick="playvideo(2)" class="play-btn" src="Play.png">
-            <
+
+            
+        <div class="video-container">
+            <div class="video">
+                <img class="v2" src="v2-img.png">
+                
+                <img onclick="playvideo('videos/v2.mp4')" class="play-btn" src="Play.png">
+                 
+            </div>
+            <div class="vd-title"><p>Breathing Exercises To Stop A Panic Attack Now </p></div>
         </div>
-        <div class="vid-3"> </div>
+        
+            <div class="video-container">
+                <div class="video">
+                    <img class="v2" src="v3-img.png">
+                    
+                    <img onclick="playvideo('videos/v3.mp4')" class="play-btn" src="Play.png">
+                    
+                </div>
+                <div class="vd-title"><p>Calm your Anxiety</p></div>
+            </div>
+    
+        </div>
     </div>
 </div>
+<video loop class="vp-1" width="300px"  controls ><source src="videos/v2.mp4"></video>
+<img onclick="cut()" class="close" src="close.png">
 <div class="footer">
     <div class="copyright">
         <p> &#169 2025 All in one health. All right reserved.</p> 

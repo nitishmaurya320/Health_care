@@ -65,6 +65,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: yellow;
+    font-size: 20px;
 }
 .menu{
     width: 40px;
@@ -195,6 +196,13 @@ opacity: 0.4;
     margin-top: 20px;
     margin-left: 5%;
 }
+.bmi1{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+}
 .r1 p{
     color: red;
     font-size: 40px;
@@ -246,6 +254,10 @@ opacity: 0.4;
     justify-items: center;
 
 }
+.exercise-heading{
+    padding-top: 20pX;
+    margin-bottom: 10px;
+}
 .exercise-heading h1{
     text-align: center;
 }
@@ -254,31 +266,59 @@ opacity: 0.4;
 
     width: 90%;
     height: 80%;
-    border: solid black 2px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-.vid-1,.vid-2,.vid-3{
-    width: 30%;
+.video{
+    width: 100%;
     height: 80%;
-    border: solid 1px black;
-    justify-content: center;
+    
+    
     align-items: center;
     display: flex;
+    flex-direction: column;
+}
+.video-container{
+    width: 29%;
+    height: 240px;
+    
+    display: flex;
+    flex-direction: column;
+    
 }
 .v1,.v2{
     width: 100%;
-    height: 80%;
-    position: relative;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 1px 8px 8px rgb(157, 157, 157);
     
-    border-radius: 10px;
+
+}
+.vd-title{
+    height: 30%;
+    width: 100%;
     
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.vp-1   {
+    display: none;
+    box-shadow: 10px 10px 10px rgb(164, 164, 164);
 }
 .play-btn{
     position: absolute;
     width: 70px;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
+.close{
+    display: none;
     cursor: pointer;
 }
 .r4 p {
@@ -369,6 +409,131 @@ opacity: 0.4;
 }
 
 
+    
+
+.cal-count{
+    width: 100%;
+    height: 400px;
+    border: solid black 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.food-items{
+    width: 50%;
+    height: 90%;
+   
+    border: solid blue 5px;
+    justify-items: center;
+    align-content: center;
+    overflow-x: auto;    
+   
+
+}
+
+.calories{
+    width: 100%;
+    height: 80%;
+    border: solid blue 4px;
+    overflow-x: auto;
+}
+.foods{
+    width: 90%;
+    height: 95%;
+    border: solid red 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f1,.f2,.f3,.f4,.f5,.f6,.f7{
+    width: 97%;
+    height: 160px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fc{
+    width: 140px;
+    height: 170px;
+    border: solid 2px rgb(0, 0, 0);
+    
+
+ 
+}
+.fruit{
+    width: 100%;
+    height: 120px;
+    
+}
+.add{
+    display: flex;
+    width: 100px;
+    height: 20px;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.c1{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+.c1 p{
+    font-size: 20px;
+}
+.calc-calories{
+    width: 100%;
+    height: 20%;
+    border: solid green 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal-2{
+    width: 50%;
+    height: 90%;
+    border: solid brown 4px;
+}
+.clear{
+    margin-left: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 30px;
+}
+.clear:active{
+    opacity: 0.3;
+}
+.totalcalory{
+    margin-left: 30px;
+}
+.calorie-head{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        align-content: center;
+}
+.add p{
+    font-size: 15px;
+    padding-left: 10px;
+    
+
+}
+.add button{
+height: 20PX;
+background-color: rgb(211, 255, 53);
+color: rgb(255, 77, 0);
+width: 40px;
+border-radius: 2px;
+border: none;
+}
+.add button:active{
+    opacity: 0.5;
+}
 
 
 /* about_us body */ /* about_us body */ /* about_us body */
@@ -395,11 +560,16 @@ opacity: 0.4;
    font-size: 18px;
 }
 
-.cal-calc{
-    width: 100%;
-    height: 400px;
-}
 
+.vid-play1,.vid-play2{
+    width: 100%;
+    
+    border: solid 4px blue;
+}   
+
+/* .vp-2{ */
+    /* display: none;
+} */
 /* about_us body */ /* about_us body */ /* about_us body */
 @media only screen and (max-width: 708px){
     body{
@@ -522,7 +692,7 @@ opacity: 0.4;
     .exercise{
         width: 100%;
         
-        height: 600px;
+        height: 800px;
         border: solid 2px rgb(232, 0, 0);
         justify-items: center;
     
@@ -530,35 +700,76 @@ opacity: 0.4;
     .exercise-content{
 
         width: 90%;
-        height: 600px;
-        border: solid black 2px;
+        height: 700px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
     }
-    .vid-1,.vid-2,.vid-3{
-        width: 80%;
-        height: 20%;
-        border: solid 1px black;
+    .video{
+        width: 100%;
+        height: 80%;
+        
         justify-content: center;
         align-items: center;
         display: flex;
+       
     }
-    .v1,.v2{
-        width: 100%;
-        position: relative;
-        height: 150px;
-        border-radius: 10px;
-        
+    .video-container{
+        width: 80%;
+        height: 220px;
     }
+
     .play-btn{
         position: absolute;
         width: 70px;
+        margin-top: 3px;
     }
-    .vp-1{
+    .v1,.v2{
+        height: 100%;
+    }
+    .cal-count{
+        height: fit-content;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .food-items,.cal-2{
         width: 100%;
     }
+    
+
+    .fc{
+        width: 25%;
+        height: 140px;
+        
+        
+    
+     
+    }
+    .fruit{
+        height: 100px;
+    }
+    .add p{
+        font-size: 10px;
+    
+    }
+    .add button{
+        width: 30px;
+        font-size: 12px;
+    }
+    .add{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .food-items{
+        height: 300px;
+    }
+    
     
 }   
