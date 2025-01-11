@@ -62,9 +62,10 @@ document.getElementById('caluu').addEventListener("click", function(){
     document.querySelector('.ans').innerHTML=ans.toFixed(2);
 
     if(age.value>=2&&age.value<=120){
-        document.querySelector('.tip-heading').innerHTML="Tips:-";
+        document.querySelector('.tip-heading').innerHTML="";
         bmiImage.style.display="none";
     if(ans<18.5&&ans>0){
+        document.querySelector('.tip-heading').innerHTML="Tips:-";
         document.querySelector('.remark').innerHTML="Underweight";
         document.querySelector('.tips').innerHTML="<ul> <li>Eat more calories</li><li>Add healthy fats</li><li> Add protein </li><li>Drink more calories </li><li>Exercise</li></ul>";   
         document.querySelector('.more_detail').innerHTML="Click here for more details";
@@ -73,9 +74,13 @@ document.getElementById('caluu').addEventListener("click", function(){
         })
     }
     else if(ans>=18.5&&ans<=24.9){
+        document.querySelector('.tip-heading').innerHTML="You are Healthy";
         document.querySelector('.remark').innerHTML="Normal";
+        document.querySelector('.tips').innerHTML="";
+        document.querySelector('.more_detail').innerHTML="";
     }
     else if(ans>=25.0&&ans<=39.9){
+        document.querySelector('.tip-heading').innerHTML="Tips:-";
         document.querySelector('.remark').innerHTML="Overweight";
         document.querySelector('.tips').innerHTML="<ul> <li>Eat varied, colorful, nutritionally dense foods</li><li>Keep a food and weight diary</li><li>Engage in regular physical activity and exercise</li>   <li>Eliminate liquid calories</li></ul>";
       document.querySelector('.more_detail').innerHTML="Click here for more details";
@@ -84,6 +89,7 @@ document.getElementById('caluu').addEventListener("click", function(){
     })}
     else{
     document.querySelector('.remark').innerHTML="Obese";
+    document.querySelector('.tip-heading').innerHTML="Tips:-";
     document.querySelector('.tips').innerHTML="<ul> <li>Exercise</li><li>Limit processed foods, sugary drinks, and unhealthy fats   </li><li> Read food labels</li>"; 
     document.querySelector('.more_detail').innerHTML="Click here for more details";
     document.querySelector('.more_detail').addEventListener("click", function(){
